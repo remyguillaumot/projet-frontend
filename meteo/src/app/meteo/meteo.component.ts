@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Town } from '../town'
 
 @Component({
   selector: 'app-meteo',
@@ -7,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MeteoComponent implements OnInit {
 
+  town: Town = {id: 1, name: 'belfort', temperature: 0, icon: "rain"} 
+  
   constructor() { }
 
   ngOnInit() {
